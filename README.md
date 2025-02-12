@@ -1,6 +1,6 @@
-# rektyaapashtolexica
+# pashto-lexica
 
-PashtoGenerative is an NPM package that processes Pashto text from `.txt` files using Google's Generative Language API (Gemini). It identifies the script type (Roman Pashto or Literal Pashto), extracts word details, and provides translations or transliterations.
+Rekhtya - Pashto Lexica is an NPM package that processes Pashto text from `.txt` files using Google's Generative Language API (Gemini). It identifies the script type (Roman Pashto or Literal Pashto), extracts word details, and provides translations or transliterations.
 
 ## Features
 - Detects whether the text is **Roman Pashto** or **Literal Pashto**.
@@ -17,4 +17,4 @@ PashtoGenerative is an NPM package that processes Pashto text from `.txt` files 
 To install the package, run:
 
 ```sh
-npm install rektyaapashtolexica
+npm install @rekhtya/pashtolexica
