@@ -17,4 +17,4 @@ Rekhtya - Pashto Lexica is an NPM package that processes Pashto text from `.txt`
 To install the package, run:
 
 ```sh
-npm install @rekhtya/pashtolexica
+npm install @rekhtya/pashto-lexica
