@@ -1,6 +1,6 @@
 {
   "name": "@rekhtya/pashto-lexica",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Rekhtya - PashtoLexica is an NPM package that processes Pashto text from .txt files using Google's Generative Language API (Gemini). It detects the script type (Roman Pashto or Literal Pashto), segments text, extracts word details, translates/transliterates between scripts, and returns a structured JSON output.",
   "main": "pashtoGenerative.js",
   "scripts": {
