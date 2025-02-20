@@ -38,16 +38,23 @@ class PashtoGenerative {
                     // Construct the API prompt for text processing
                     const prompt = `Task: Process the following Pashto text and return a structured JSON output.
 
-Text:
-${fileContent}
-
-Steps:
-1. Identify the script type: 'Roman Pashto' or 'Literal Pashto'.
-2. Segment text into lines and words.
-3. Extract each word's details (original word, English meaning, part of speech, synonyms in Pashto).
-4. If the script is **Roman Pashto**, translate it into **Pashto script**.
-5. If the script is **Pashto script**, transliterate it into **Roman Pashto**.
-6. Return a structured JSON response in **pure JSON format**, without markdown or extra formatting.`;
+                    Text:
+                    ${fileContent}
+                    
+                    Steps:
+                    1. Identify the script type: 'Roman Pashto' or 'Literal Pashto'.
+                    2. Segment text into lines and words.
+                    3. Extract each word's details with the following keys, ensuring they are always included:
+                       - "original_word": (The word in Pashto script)
+                       - "roman_transliteration": (The word in Roman Pashto)
+                       - "english_meaning": (The English meaning of the word)
+                       - "part_of_speech": (The grammatical category of the word, e.g., noun, verb)
+                       - "synonyms": (An array of synonyms in Pashto)
+                    
+                    4. If the script is **Roman Pashto**, translate it into **Pashto script**.
+                    5. If the script is **Pashto script**, transliterate it into **Roman Pashto**.
+                    6. Return a structured JSON response in **pure JSON format**, without markdown or extra formatting.`;
+                    
 
                     // Define the API request payload
                     const requestData = {
